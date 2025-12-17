@@ -10,9 +10,9 @@
         let sum = 0,
           min = 1000;
 
-        for (let i = 0; i < arr.length; i++) {
+        for (let i of arr) {
           if (arr[i] % 2 === 1) {
-            sum = sum + arr[i];
+            sum += arr[i];
             if (arr[i] < min) {
               min = arr[i];
             }
