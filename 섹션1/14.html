@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(s) {
+        let answer = "",
+          max = Number.MIN_SAFE_INTEGER;
+        for (let x of s) {
+          max = x.length;
+          if (answer.length < x.length) {
+            answer = x;
+          }
+        }
+
+        return answer;
+      }
+      let str = [
+        "teacher",
+        "time",
+        "student",
+        "beautiful",
+        "good",
+        // "asdfasdfasdfasdf",
+      ];
+      console.log(solution(str));
+    </script>
+  </body>
+</html>
