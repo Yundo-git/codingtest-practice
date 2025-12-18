@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>출력결과</title>
+  </head>
+  <body>
+    <script>
+      function solution(s) {
+        let answer = "";
+        const word = [...s];
+
+        word.forEach((v) => {
+          if (v == "A") {
+            answer += "#";
+          } else {
+            answer += v;
+          }
+        });
+        return answer;
+      }
+
+      let str = "BANANA";
+      console.log(solution(str));
+    </script>
+  </body>
+</html>
